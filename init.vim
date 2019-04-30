@@ -459,9 +459,9 @@ map <C-F2> :tabnew<CR>
 " 设置空格键开关折叠
 nnoremap <space> @=((foldclosed(line('.')) < 0) ? 'zc' :'zo')<CR>
 
-" 映射全选+复制 Ctrl+a
-map <C-A> ggVGY
-map! <C-A> <Esc>ggVGY
+" 映射全选 Ctrl+a
+map <C-A> ggVG
+map! <C-A> <Esc>ggVG
 
 " 绑定复制到系统剪贴板快捷键
 vmap <leader>c "+y
