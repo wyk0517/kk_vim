@@ -1,5 +1,12 @@
 [TOC]
-
+### 说明
+参考[mentor](https://git.coding.net/zkdfbb/vim.git)的vim配置，加入了一些自己的东西
+#### 1. 刷题专用
+将样例写入 {filename}.in ，运行f4，他会自动变异并将结果输出到 {filename}.out
+### 一键安装命令
+```
+pip install autopep8 flake8 && rm -rf ~/.vimrc ~/.vim && git clone --recursive https://github.com/wyk0517/kk_vim.git ~/.vim && ln -s ~/.vim ~/.config/nvim && (echo | vim +PlugInstall +qall) && (echo | vim +UpdateRemotePlugins)
+```
 ### 安装方法
 
 ```
@@ -129,7 +136,7 @@ vim版本控制，同时支持Git 和 Svn，高亮当前修改
 1. F1:帮助(默认)
 2. F2:切换窗口
 3. F3:去行尾空格(普通模式)
-3. F4:去空行(普通模式)
+3. F4:acm刷题模式，从{filename}.in读入，结果输出到{filename}.out
 4. F5:编译运行
 6. F6:调试运行
 7. F7:粘贴模式
@@ -149,8 +156,5 @@ vim版本控制，同时支持Git 和 Svn，高亮当前修改
 20. w: 光标向后移动一个单词
 21. ,b: 插入/删除python断点
 22. :wq 保存退出, :qq 直接退出，:w!! 强制写入
-
-### VIM技巧
-
-[Vim编程——配置与技巧](http://linux-wiki.cn/wiki/%E7%94%A8Vim%E7%BC%96%E7%A8%8B%E2%80%94%E2%80%94%E9%85%8D%E7%BD%AE%E4%B8%8E%E6%8A%80%E5%B7%A7)
-
+23. Ctrl+x 重新载入文件(等于:e!)
+24. Ctrl+c 复制到系统粘贴板
