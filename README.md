@@ -2,7 +2,7 @@
 ### 说明
 参考[mentor](https://git.coding.net/zkdfbb/vim.git)的vim配置，加入了一些自己的东西
 #### 1. 刷题专用
-将样例写入 {filename}.in ，运行f4，他会自动变异并将结果输出到 {filename}.out
+将样例写入 {filename}.in ，运行f4，他会自动编译并将结果输出到 {filename}.out
 ### 一键安装命令
 ```
 pip install autopep8 flake8 && rm -rf ~/.vimrc ~/.vim && git clone --recursive https://github.com/wyk0517/kk_vim.git ~/.vim && ln -s ~/.vim ~/.config/nvim && (echo | vim +PlugInstall +qall) && (echo | vim +UpdateRemotePlugins)
