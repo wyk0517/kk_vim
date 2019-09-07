@@ -49,6 +49,10 @@ Plug 'roxma/nvim-yarp'
 Plug 'roxma/vim-hug-neovim-rpc'
 Plug 'zchee/deoplete-jedi'
 Plug 'Shougo/deoplete-clangx'
+Plug 'plasticboy/vim-markdown'
+Plug 'iamcco/mathjax-support-for-mkdp'
+Plug 'iamcco/markdown-preview.vim'
+" Plug 'zxqfl/tabnine-vim'
 
 call plug#end()            " required
 
@@ -181,9 +185,9 @@ set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strf
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 
 " 可以在buffer的任何地方使用鼠标(使用taglist鼠标定位时需打开)
-""set mouse=a
-""set selection=exclusive
-""set selectmode=mouse,key
+set mouse=a
+set selection=exclusive
+set selectmode=mouse,key
 
 "设置编码
 set langmenu=zh_CN.UTF-8
@@ -779,7 +783,7 @@ nnoremap <leader>gd :YcmCompleter GoToDeclaration<CR>
 let g:deoplete#enable_at_startup = 1
 call deoplete#enable()
 " let g:python3_host_prog = '/home/zhangkai/.anaconda3/bin/python'
-let g:python3_host_prog = '/Users/yankai.wang/anaconda3/bin/python3'
+let g:python3_host_prog = '/Users/kk17/anaconda3/bin/python3'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " ale
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
